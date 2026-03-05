@@ -1,0 +1,125 @@
+:root {
+    --cor-de-fundo: #000000;
+    --cor-dos-cards: linear-gradient(160deg, #272626, #4c4c4d);
+}
+
+* {
+    margin: 0;
+    left: 0;
+    top: 0;
+
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(0, 0, 0);
+    max-width: 20%;
+    height: 100vh;
+    opacity: 0;
+    margin-left: -300px;
+    z-index: 4;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.ativo {
+    transition: 1s;
+    opacity: 1;
+    margin-left: 0px;
+}
+
+#btn-menu {
+    position: absolute;
+    padding: 20px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+}
+
+#btn-menu svg {
+    width: 40px;
+}
+
+.bnt-fechar-menu {
+    background-color: transparent;
+    border: none;
+}
+
+.bnt-fechar-menu svg {
+    position: absolute;
+    width: 30px;
+    left: 80%;
+    top: 2%;
+}
+
+
+.img-home {
+    width: 100%;
+    margin-top: -930px;
+}
+
+p {
+    color: white;
+    margin-top: 590px;
+}
+
+.img-street {
+    width: 50vh;
+    margin-top: 15%;
+    border-radius: 10px;
+}
+
+.projetos-street {
+    background: var(--cor-dos-cards);
+    border-radius: 10px;
+    transition: 0.4s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    width: 30%;
+    justify-items: center;
+    margin-left: 90px;
+    margin-bottom: 90px;
+    height: 61vh;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.projetos-street:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:
+        0 0 15px rgba(129, 128, 129, 0.8),
+        0 0 30px rgba(97, 96, 98, 0.6),
+        0 0 60px rgba(129, 128, 130, 0.4);
+
+}
+
+.projetos-street p {
+    margin-top: 7%;
+    width: 290px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-visitar {
+    padding: 10px;
+    width: 140px;
+    border-radius: 10px;
+    border: solid 1px white;
+    background-color: var(--cor-de-fundo);
+    color: white;
+    text-align: center;
+    opacity: 0;
+}
