@@ -1,6 +1,6 @@
 :root {
     --cor-de-fundo: #000000;
-    --cor-dos-cards: linear-gradient(160deg, #272626, #4c4c4d);
+    --cor-dos-cards: #59025e;
 }
 
 * {
@@ -65,61 +65,51 @@ body {
     top: 2%;
 }
 
+.text-Apresentencion {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-family: "Fjalla One", sans-serif;
 
-.img-home {
-    width: 100%;
-    margin-top: -930px;
+    & h1 {
+        color: white;
+        font-size: 50px;
+
+        & span {
+            color: #800080;
+        }
+    }
 }
 
-p {
-    color: white;
-    margin-top: 590px;
-}
-
-.img-street {
-    width: 50vh;
-    margin-top: 15%;
-    border-radius: 10px;
-}
-
-.projetos-street {
-    background: var(--cor-dos-cards);
-    border-radius: 10px;
-    transition: 0.4s;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    width: 30%;
-    justify-items: center;
-    margin-left: 90px;
-    margin-bottom: 90px;
-    height: 61vh;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.projetos-street:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow:
-        0 0 15px rgba(129, 128, 129, 0.8),
-        0 0 30px rgba(97, 96, 98, 0.6),
-        0 0 60px rgba(129, 128, 130, 0.4);
+.caixa-eric {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    margin-top: -690px;
+    left: 60%;
 
 }
 
-.projetos-street p {
-    margin-top: 7%;
-    width: 290px;
-    text-align: center;
-    margin-bottom: 10px;
+.caixa-eric::before {
+    content: "eric";
+    background: radial-gradient(circle,
+            #800080 0%,
+            rgba(128, 0, 128, 0.6) 40%,
+            rgba(128, 0, 128, 0.2) 70%,
+            black 100%);
+
+    padding: 200px 200px;
+    position: absolute;
+    margin-top: -10px;
+    left: -2%;
+    border-radius: 50%;
+
 }
 
-.btn-visitar {
-    padding: 10px;
-    width: 140px;
-    border-radius: 10px;
-    border: solid 1px white;
-    background-color: var(--cor-de-fundo);
-    color: white;
-    text-align: center;
-    opacity: 0;
+.eric-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
 }
